@@ -1,0 +1,143 @@
+/*
+ * Name: Angela Liu
+ * Date: April 22, 2020
+ * Section: CSE 154 AL
+ *
+ * This is the stylesheet for my game.
+ */
+
+body {
+  background-color: rgb(205, 231, 255);
+}
+
+header, body, figure, #totebag-container, #totebag figure, .questions {
+  display: flex;
+}
+
+header, body, figure, #totebag-container, #totebag figure {
+  flex-direction: column;
+}
+
+header, body, figure, #totebag figure {
+  align-items: center;
+}
+
+header, body, figure {
+  font-family: 'VT323', monospace;
+  color: rgb(102, 97, 89);
+  font-size: 23px;
+}
+
+h1 {
+  font-family: 'Assistant', sans-serif;
+  font-size: 29px;
+  letter-spacing: 3px;
+  color: rgb(255, 247, 215);
+  text-shadow: -2.5px 3px rgb(252, 224, 224);
+  -webkit-text-stroke: 0.75px rgb(0, 0, 0);
+}
+
+#rules {
+  width: 750px;
+}
+
+#rules-title {
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(70, 42, 32);
+}
+
+#totebag {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#totebag-container {
+  align-items: flex-end;
+}
+
+#totebag img {
+  width: 70px;
+  height: 70px;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#totebag figure, #no-badge, #lost, #won {
+  text-align: center;
+}
+
+#totebag figure {
+  float: right;
+  display: block;
+}
+
+.hover, #totebag-contents {
+  background: rgb(240, 240, 240);
+  border: solid 2px rgb(102, 97, 89);
+}
+
+.hover {
+  opacity: 80%;
+}
+
+.character img, #got-badge img {
+  width: 300px;
+  height: 300px;
+}
+
+figcaption, #no-badge, #lost, #won {
+  text-transform: uppercase;
+}
+
+figcaption {
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+#totebag figcaption {
+  font-size: 27px;
+}
+
+.question {
+  width: 325px;
+  font-size: 20px;
+}
+
+form {
+  width: 500px;
+}
+
+#no-badge, #lost, #won {
+  margin: auto auto;
+}
+
+#no-badge, #lost {
+  padding-top: 50px;
+  line-height: 70px;
+  font-size: 40px;
+  width: 800px;
+  color: rgb(146, 27, 27);
+}
+
+.hidden {
+  display: none;
+}
+
+#totebag-contents {
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+#continue {
+  margin-bottom: 30px;
+}
+
+#won {
+  margin-top: 70px;
+  font-size: 50px;
+}

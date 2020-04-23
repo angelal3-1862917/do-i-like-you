@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--
+  Name: Angela Liu
+  Date: April 18, 2020
+  Section: CSE 154 AL
+
+  This is the game.html page for my CP2 assignment. It includes a game that determines whether
+  or not I like you. You answer questions and based on your answers, you are able to earn badges.
+  Earn all three badges to win.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Does Rangie like you?</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section id="totebag">
+      <section id="totebag-container">
+        <figure><img src="tote-bag.PNG" alt="pixel art tote bag">
+          <figcaption>totebag</figcaption>
+        </figure>
+        <section id="totebag-contents" class="hidden">
+        </section>
+      </section>
+    </section>
+    <header>
+      <h1>a game where i decide if i like you or not</h1>
+      <p>Collect all the badges to win!</p>
+      <p id="rules">
+        <span id="rules-title">RULES:</span> Each character contains a badge.
+        Earn each badge by answering a majority of the
+        questions each character provides correctly. Collect all 3 badges to win the game.
+        View your current badges in your tote bag.
+      </p>
+    </header>
+    <main>
+      <section class="test">
+        <section class="character">
+          <figure>
+            <figcaption>Dwight</figcaption>
+            <img src="dwight.PNG" alt="pixel art Dwight">
+          </figure>
+        </section>
+        <form>
+          <fieldset>
+            <legend>Q1. Am I the best character from The Office?</legend>
+            <p>
+              <input type="radio" name="office-char" id="office-char-1"
+              class="correct" value="yes">
+              <label for="office-char-1">Yes</label>
+            </p>
+            <p>
+              <input type="radio" name="office-char" id="office-char-2"
+              class="incorrect" value="no">
+              <label for="office-char-2">No</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Q2. Which Office quote is the best?</legend>
+            <p>
+              <input type="radio" name="office-quote" id="office-quote-1"
+              class="incorrect" value="plague">
+              <label for="office-quote-1">"We need a new plague."</label>
+            </p>
+            <p>
+              <input type="radio" name="office-quote" id="office-quote-2"
+              class="incorrect" value="she-said">
+              <label for="office-quote-2">"That's what she said."</label>
+            </p>
+            <p>
+              <input type="radio" name="office-quote" id="office-quote-3"
+              class="incorrect" value="toby">
+              <label for="office-quote-3">"Goodbye Toby."</label>
+            </p>
+            <p>
+              <input type="radio" name="office-quote" id="office-quote-4"
+              class="incorrect" value="horn">
+              <label for="office-quote-4">"My horn can pierce the sky."</label>
+            </p>
+            <p>
+              <input type="radio" name="office-quote" id="office-quote-5" class="correct"
+              value="all-above">
+              <label for="office-quote-5">All of the above</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Q3. What is the perfect crime?</legend>
+            <p>
+              <input type="radio" name="perf-crime" id="perf-crime-1"
+              class="incorrect" value="cannot-think">
+              <label for="perf-crime-1">I cannot think of the perfect crime. If I could,
+                it wouldn't be perfect.
+              </label>
+            </p>
+            <p>
+              <input type="radio" name="perf-crime" id="perf-crime-2"
+              class="incorrect" value="purpose">
+              <label for="perf-crime-2">One that, even if I am caught, fulfills my purpose.</label>
+            </p>
+            <p>
+              <input type="radio" name="perf-crime" id="perf-crime-3"
+              class="correct" value="berlin">
+              <label for="perf-crime-3">Steal the chandelier from Tiffany's father's
+                business. Then make Tiffany fall in love with me. I go to Canada. Thirty years
+                later, I get a postcard from Tiffany. I don't care. I go to Berlin. That's
+                where I stored the chandelier.
+              </label>
+            </p>
+            <p>
+              <input type="radio" name="perf-crime" id="perf-crime-4"
+              class="incorrect" value="moscow">
+              <label for="perf-crime-3">Steal the chandelier from Tiffany's father's
+                business. Then make Tiffany fall in love with me. I go to Canada. Thirty years
+                later, I get a postcard from Tiffany. I don't care. I go to Moscow. That's
+                where I stored the chandelier.
+              </label>
+            </p>
+          </fieldset>
+          <p><button class="ok-btn" type="button">OK</button></p>
+        </form>
+      </section>
+      <section class="test hidden">
+        <section class="character">
+          <figure>
+            <figcaption>I'm shy</figcaption>
+            <img src="uwu-emoji.PNG" alt="pixel art uwu emoji">
+          </figure>
+        </section>
+        <form>
+          <fieldset>
+            <legend>Q1. Are bucket hats cool?</legend>
+            <p>
+              <input type="radio" name="bucket-hats" id="bucket-hats-1"
+              class="correct" value="yes">
+              <label for="bucket-hats-1">Yes</label>
+            </p>
+            <p>
+              <input type="radio" name="bucket-hats" id="bucket-hats-2"
+              class="incorrect" value="no">
+              <label for="bucket-hats-2">No</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Q2. Are you shy?</legend>
+            <p>
+              <input type="radio" name="shy" id="shy-1"
+              class="correct" value="yes">
+              <label for="shy-1">Yes</label>
+            </p>
+            <p>
+              <input type="radio" name="shy" id="shy-2"
+              class="incorrect" value="no">
+              <label for="shy-2">No</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Q3. Is Tiktok socially acceptable?</legend>
+            <p>
+              <input type="radio" name="tiktok" id="tiktok-1"
+              class="incorrect" value="yes">
+              <label for="tiktok-1">Yes</label>
+            </p>
+            <p>
+              <input type="radio" name="tiktok" id="tiktok-2"
+              class="correct" value="no">
+              <label for="tiktok-2">No</label>
+            </p>
+            <p>
+              <input type="radio" name="tiktok" id="tiktok-3"
+              class="correct" value="vine-energy">
+              <label for="tiktok-3">Only when it has vine energy.
+                Some people must stop.
+              </label>
+            </p>
+          </fieldset>
+          <p><button class="ok-btn" type="button">OK</button></p>
+        </form>
+      </section>
+      <section class="test hidden">
+        <section class="character">
+          <figure>
+            <figcaption>shrek</figcaption>
+            <img src="shrek.PNG" alt="pixel art shrek">
+          </figure>
+        </section>
+        <form>
+          <fieldset>
+            <legend>Q1. Cereal first or milk first?</legend>
+            <p>
+              <input type="radio" name="cereal-milk" id="cereal-milk-1"
+              class="incorrect" value="milk">
+              <label for="cereal-milk-1">Milk first</label>
+            </p>
+            <p>
+              <input type="radio" name="cereal-milk" id="cereal-milk-2"
+              class="correct" value="cereal">
+              <label for="cereal-milk-2">Cereal first</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Q2. Choose one:</legend>
+            <p>
+              <input type="radio" name="food" id="food-1"
+              class="correct" value="kbbq">
+              <label for="food-1">K-BBQ</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="food-2"
+              class="correct" value="kbbq">
+              <label for="food-2">Hotpot</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="food-3"
+              class="correct" value="mala">
+              <label for="food-3">Mala</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="food-4"
+              class="correct" value="sushi">
+              <label for="food-4">Sooshi</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="food-5"
+              class="correct" value="ramen">
+              <label for="food-5">Ramen</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="food-6"
+              class="correct" value="pad-thai">
+              <label for="food-6">Pad-Tad-Thai</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="food-7"
+              class="correct" value="pho">
+              <label for="food-7">Pho</label>
+            </p>            <p>
+              <input type="radio" name="food" id="food-8"
+              class="correct" value="fried-chicke ">
+              <label for="food-8">Fried Chicken</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="food-9"
+              class="correct" value="mcdonalds">
+              <label for="food-9">McDonald's</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Q3. Shrekobama?</legend>
+            <p>
+              <input type="radio" name="shrek-obama" id="shrek-obama-1"
+              class="correct" value="yes">
+              <label for="shrek-obama-1">Yes</label>
+            </p>
+            <p>
+              <input type="radio" name="shrek-obama" id="shrek-obama-2"
+              class="incorrect" value="No">
+              <label for="shrek-obama-2">No</label>
+            </p>
+            <p>
+              <input type="radio" name="shrek-obama" id="shrek-obama-3"
+              class="correct" value="donkey">
+              <label for="shrek-obama-3">DONKAYYYYYYYc homp</label>
+            </p>
+          </fieldset>
+          <p><button class="ok-btn" type="button">OK</button></p>
+        </form>
+      </section>
+      <section class="hidden" id="no-badge">
+        <p>You did not win the badge from this character.
+          <br>
+          Rancid.
+        </p>
+        <button class="continue" type="button">CONTINUE</button>
+      </section>
+      <section class="hidden" id="got-badge">
+        <p>
+          Good job.
+          <br>
+          You got da badge.
+        </p>
+        <figure id="badge">
+
+        </figure>
+        <button class="continue" type="button">CONTINUE</button>
+      </section>
+      <section id="won" class="hidden">
+        <p>You have won.
+          <br>
+          You are accepted.
+        </p>
+      </section>
+      <section id="lost" class="hidden">
+        <p>You did not win.
+          <br>
+          I may not like you very much.
+        </p>
+        <p>
+          I am sorry.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
